@@ -1,0 +1,1282 @@
+[ 2017-02-22T08:44:22+08:00 ] 127.0.0.1 /wangzhan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0118s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0160s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.050710s ]
+INFO: [ app_init ] --END-- [ RunTime:0.050787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+SQL: SELECT `name`,`value`,`type` FROM `auc_admin_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: taglib D:\phpStudy\WWW\wangzhan\Application\Common\Behavior\InitConfigBehavior.class.php 第 56 行.
+NOTIC: [8] Undefined index: behavior D:\phpStudy\WWW\wangzhan\Application\Common\Behavior\InitConfigBehavior.class.php 第 63 行.
+NOTIC: [8] Undefined index: behavior D:\phpStudy\WWW\wangzhan\Application\Common\Behavior\InitConfigBehavior.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `auc_admin_theme` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `auc_admin_theme` WHERE `current` = 1 ORDER BY id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_admin_hook` [ RunTime:0.0108s ]
+SQL: SELECT `addons` FROM `auc_admin_hook` WHERE `name` = 'FormBuilderExtend' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_admin_addon` [ RunTime:0.0079s ]
+SQL: SELECT `config` FROM `auc_admin_addon` WHERE `name` = '' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.042542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.044134s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002646s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.002692s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0101s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 1 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0075s ]
+NOTIC: [8] Undefined variable: data_p D:\phpStudy\WWW\wangzhan\Application\Home\Controller\IndexController.class.php 第 53 行.
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 2 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 9   [ RunTime:0.0058s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 7 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0052s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 8 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0052s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 9 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0056s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 10 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 8   [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_slider` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `auc_article_slider` WHERE `status` = 1 ORDER BY sort desc, id desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 191 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 192 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 193 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 5 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `auc_article_friendly_link` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `auc_article_friendly_link` WHERE `status` = '1' ORDER BY sort desc, id desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 206 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 210 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 212 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 213 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 214 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined variable: group_list D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2017-02-22T08:46:14+08:00 ] 127.0.0.1 /wangzhan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0106s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0062s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.033706s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001437s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005375s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000868s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0053s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 1 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0068s ]
+NOTIC: [8] Undefined variable: data_p D:\phpStudy\WWW\wangzhan\Application\Home\Controller\IndexController.class.php 第 53 行.
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 2 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 9   [ RunTime:0.0056s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 7 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0052s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 8 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0077s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 9 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0055s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 10 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 8   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_slider` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `auc_article_slider` WHERE `status` = 1 ORDER BY sort desc, id desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 191 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 192 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 193 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 5 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `auc_article_friendly_link` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `auc_article_friendly_link` WHERE `status` = '1' ORDER BY sort desc, id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 206 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 210 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 212 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 213 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 214 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined variable: group_list D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2017-02-22T08:46:16+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/detail/id/58.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0056s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0061s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.023674s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004158s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000922s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `id` = 58 AND `status` >= 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `auc_article_base` SET `view`=view+1 WHERE `id` = 58 [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for get_user_info(), called in D:\phpStudy\WWW\wangzhan\Application\Article\Model\ArticleModel.class.php on line 204 and defined D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 287 行.
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `auc_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 182 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: field D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+NOTIC: [8] Undefined index:  D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `auc_article_base` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Article\Model\ArticleArticleModel
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `auc_article_article` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_attribute` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_article_attribute` WHERE `id` IN ('')  [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` < '58' AND `cid` = '1' ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `title` FROM `auc_article_article` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` > '58' AND `cid` = '1' ORDER BY id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 24 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 25 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2017-02-22T09:33:47+08:00 ] 127.0.0.1 /wangzhan/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0074s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0092s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.040918s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001686s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.009479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011378s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001753s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001816s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0051s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 1 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0115s ]
+NOTIC: [8] Undefined variable: data_p D:\phpStudy\WWW\wangzhan\Application\Home\Controller\IndexController.class.php 第 53 行.
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 2 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 9   [ RunTime:0.0052s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 7 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0079s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 8 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0053s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 9 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0074s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 10 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 8   [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0082s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_slider` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `auc_article_slider` WHERE `status` = 1 ORDER BY sort desc, id desc LIMIT 0,3   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 191 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 192 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 193 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 5 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `auc_article_friendly_link` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `auc_article_friendly_link` WHERE `status` = '1' ORDER BY sort desc, id desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 206 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 210 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 212 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 213 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 214 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined variable: group_list D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002207s ]
+
+[ 2017-02-22T09:33:49+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/detail/id/58.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0056s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0053s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.025733s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004284s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001338s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001383s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `id` = 58 AND `status` >= 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `auc_article_base` SET `view`=view+1 WHERE `id` = 58 [ RunTime:0.0021s ]
+NOTIC: [2] Missing argument 2 for get_user_info(), called in D:\phpStudy\WWW\wangzhan\Application\Article\Model\ArticleModel.class.php on line 204 and defined D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 287 行.
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 182 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: field D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+NOTIC: [8] Undefined index:  D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `auc_article_base` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Article\Model\ArticleArticleModel
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `auc_article_article` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_attribute` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `auc_article_attribute` WHERE `id` IN ('')  [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` < '58' AND `cid` = '1' ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `auc_article_article` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` > '58' AND `cid` = '1' ORDER BY id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 24 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 25 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2017-02-22T09:33:55+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/volist/pid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0061s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0052s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.026777s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004670s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001448s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0054s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '5' ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 0,12   [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '5' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2017-02-22T09:33:57+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0055s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0053s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.025996s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004220s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001340s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001386s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0054s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 1 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0053s ]
+NOTIC: [8] Undefined variable: data_p D:\phpStudy\WWW\wangzhan\Application\Home\Controller\IndexController.class.php 第 53 行.
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 2 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 9   [ RunTime:0.0052s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 7 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0050s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 8 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0051s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 9 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0056s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 10 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 8   [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_slider` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `auc_article_slider` WHERE `status` = 1 ORDER BY sort desc, id desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 191 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 192 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 193 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 5 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `auc_article_friendly_link` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `auc_article_friendly_link` WHERE `status` = '1' ORDER BY sort desc, id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 206 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 210 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 212 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 213 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 214 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined variable: group_list D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2017-02-22T09:34:04+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/volist/pid/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0057s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0053s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.025530s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004331s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001250s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: field D:\phpStudy\WWW\wangzhan\Application\Article\Model\CategoryModel.class.php 第 153 行.
+SQL: SELECT * FROM `auc_article_category` WHERE `status` = 1 AND `pid` = '5' AND `group` = '1' ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 42 行.
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 42 行.
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 42 行.
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 42 行.
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 42 行.
+NOTIC: [8] Undefined index: cid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001611s ]
+
+[ 2017-02-22T09:34:26+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/volist/pid/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0061s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.027367s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004246s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001315s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: field D:\phpStudy\WWW\wangzhan\Application\Article\Model\CategoryModel.class.php 第 153 行.
+SQL: SELECT * FROM `auc_article_category` WHERE `status` = 1 AND `pid` = '5' AND `group` = '1' ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0052s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '19' ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 0,12   [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '19' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-02-22T09:34:28+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/detail/id/60.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0058s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0053s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.025920s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004337s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001323s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001363s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `id` = 60 AND `status` >= 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `auc_article_base` SET `view`=view+1 WHERE `id` = 60 [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for get_user_info(), called in D:\phpStudy\WWW\wangzhan\Application\Article\Model\ArticleModel.class.php on line 204 and defined D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 287 行.
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `auc_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 182 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: field D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+NOTIC: [8] Undefined index:  D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `auc_article_base` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Article\Model\ArticleArticleModel
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `auc_article_article` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_attribute` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_article_attribute` WHERE `id` IN ('')  [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` < '60' AND `cid` = '19' ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` > '60' AND `cid` = '19' ORDER BY id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 24 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 25 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2017-02-22T09:34:29+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/volist/pid/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0052s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0051s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.024899s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004633s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001372s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001431s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0054s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '4' ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 0,12   [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '4' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2017-02-22T09:34:30+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/volist/pid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0055s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0053s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.025463s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.002975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003902s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001344s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0049s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '1' ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 0,12   [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '1' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2017-02-22T09:34:31+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/detail/id/44.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0054s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0052s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.025343s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004306s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001256s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `id` = 44 AND `status` >= 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `auc_article_base` SET `view`=view+1 WHERE `id` = 44 [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for get_user_info(), called in D:\phpStudy\WWW\wangzhan\Application\Article\Model\ArticleModel.class.php on line 204 and defined D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 287 行.
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `auc_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 182 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: field D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+NOTIC: [8] Undefined index:  D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `auc_article_base` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Article\Model\ArticleArticleModel
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `auc_article_article` WHERE `id` = 44 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_attribute` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_article_attribute` WHERE `id` IN ('')  [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` < '44' AND `cid` = '1' ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `title` FROM `auc_article_article` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` > '44' AND `cid` = '1' ORDER BY id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `title` FROM `auc_article_article` WHERE `id` = 58 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 24 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 25 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2017-02-22T09:34:33+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/volist/pid/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0054s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0053s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.025778s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004232s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001404s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001448s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0052s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '5' ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 0,12   [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = '5' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 32 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+NOTIC: [8] Undefined index: creat_time D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\806d5dbd3cb45b2917635d212b2fb8ea.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2017-02-22T09:34:35+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/index/detail/id/46.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0056s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0053s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.025577s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004262s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001336s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001381s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `id` = 46 AND `status` >= 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `auc_article_base` SET `view`=view+1 WHERE `id` = 46 [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for get_user_info(), called in D:\phpStudy\WWW\wangzhan\Application\Article\Model\ArticleModel.class.php on line 204 and defined D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 287 行.
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 182 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: field D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+NOTIC: [8] Undefined index:  D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 290 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `auc_article_base` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_article_type` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Article\Model\ArticleArticleModel
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `auc_article_article` WHERE `id` = 46 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_article_attribute` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `auc_article_attribute` WHERE `id` IN ('')  [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` < '46' AND `cid` = '5' ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `auc_article_article` WHERE `id` = 45 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` WHERE `status` = 1 AND `id` > '46' AND `cid` = '5' ORDER BY id asc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `auc_article_attribute` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `auc_article_article` WHERE `id` = 47 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_type` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_base` INNER JOIN auc_article_article ON auc_article_base.id = auc_article_article.id  WHERE `status` = '1' AND `doc_type` = 3 ORDER BY sort desc,auc_article_base.id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_article_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`group`,`doc_type`,`title`,`url`,`content`,`index_template`,`detail_template`,`post_auth`,`icon`,`create_time`,`update_time`,`sort`,`status` FROM `auc_article_category` WHERE `status` = 1 AND `group` = '1' ORDER BY sort asc, id asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 24 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 25 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 43 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\1223f42a89e823bf89547594651162de.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2017-02-22T09:34:35+08:00 ] 127.0.0.1 /wangzhan/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0103s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0060s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.048535s ]
+INFO: [ app_init ] --END-- [ RunTime:0.048633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.004368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005261s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000962s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `auc_article_article` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0060s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 1 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0065s ]
+NOTIC: [8] Undefined variable: data_p D:\phpStudy\WWW\wangzhan\Application\Home\Controller\IndexController.class.php 第 53 行.
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 2 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 9   [ RunTime:0.0052s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 7 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0057s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 8 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0071s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 9 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 7   [ RunTime:0.0051s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 10 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 8   [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `auc_article_base` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `auc_article_category` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url` FROM `auc_article_category` WHERE `status` = 1 AND `group` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`group`,`title`,`url`,`doc_type`,`content`,`update_time` FROM `auc_article_category` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auc_article_slider` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `auc_article_slider` WHERE `status` = 1 ORDER BY sort desc, id desc LIMIT 0,3   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 191 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 192 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE ( id = 193 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT ArticleArticle.id AS id,ArticleArticle.title AS title,ArticleArticle.content AS content,ArticleArticle.cover AS cover,ArticleBase.cid AS cid,ArticleBase.create_time AS create_time,AdminUpload.path AS path FROM auc_article_article ArticleArticle LEFT JOIN auc_article_base ArticleBase ON ArticleArticle.id = ArticleBase.id LEFT JOIN auc_admin_upload AdminUpload ON ArticleArticle.cover = AdminUpload.id WHERE ArticleBase.status <> '-1' AND ArticleBase.cid = 5 ORDER BY ArticleBase.sort desc,ArticleArticle.id desc LIMIT 6   [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `auc_article_friendly_link` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `auc_article_friendly_link` WHERE `status` = '1' ORDER BY sort desc, id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 206 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 207 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 209 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 210 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 211 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 212 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 213 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 214 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 215 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 26 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined variable: group_list D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 28 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 29 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 32 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+NOTIC: [8] Undefined index: category D:\phpStudy\WWW\wangzhan\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+

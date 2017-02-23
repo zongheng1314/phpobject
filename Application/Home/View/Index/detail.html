@@ -1,0 +1,88 @@
+    <include file='Common:header'/>
+    <link href="__CSS__/index.css" rel="stylesheet">
+    <link href="__CSS__/inner.css" rel="stylesheet">
+</head>
+<body>
+
+    <include file='Common:top'/>
+    
+<div class="main-wrap">
+    <div class="clear10"></div>
+    <table class="main-table" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td width="300" class="inner-left">
+                <notempty name="park_child">
+                <div class="left-t">资讯分类</div>
+                <ul class="news-class">
+                    <volist name='park_child' id="park">
+                    <!--<li <if condition="$article_detail['cid'] eq $park['id']">class="on"</if>--> 
+                    <li <if condition="$_GET['pid'] eq $park['id'] || $article_detail['cid'] eq $park['id']">class="on"</if>><a href="{:U('Index/volist', array('pid' => $park['id']))}">{:strcut($park['title'],15)}</a></li>
+                      <!--<li class="on"><a href="#">{$park['title']}</a></li>-->
+                    </volist>
+                </ul>
+                </notempty>
+                <div class="left-t">最新文章</div>
+                <ul class="news-hot">
+                    <volist name='new_article_list' id="newarticle" offset ='0' length='6'>
+                    <li><a href="{:U('Index/detail',array('id'=>$newarticle['id']))}">{:strcut($newarticle['title'],10)}</a></li>
+                    </volist>
+                </ul>
+                <div class="left-t">联系方式</div>
+                <table class="cont-box" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <th>单位名称:</th>
+                        <td>潍坊高新技术产业开发区滨海产业园</td>
+                    </tr>
+                    <tr>
+                        <th>座&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机:</th>
+                        <td>0536-2097170</td>
+                    </tr>
+                    <tr>
+                        <th>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</th>
+                        <td>wfgxbhcyy@126.com</td>
+                    </tr>
+                    <tr>
+                        <th>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编:</th>
+                        <td>261205</td>
+                    </tr>
+                    <tr>
+                        <th>通讯地址:</th>
+                        <td>潍坊高新区健康东街6699号创新大厦</td>
+                    </tr>
+                </table>
+            </td>
+            <td width="15"></td>
+            <td width="685" class="inner-right">
+                <div class="position">
+                    <a href="{:U('Index/index')}">首页</a> > 
+                    <notempty name='group_list.1'>
+                        <a href="{:U('Index/volist',array('pid' =>$group_list[0]['id']))}">{$group_list[0]['title']}</a> >
+                    </notempty>
+                    <notempty name='up_title'>
+                    <a href="{:U('Index/volist',array('pid' =>$group_list[count($group_list)-1]['id']))}">{$up_title}</a> > 
+                   
+                    </notempty>
+                   
+                    <a >{:strcut($article_detail['title'],15)}</a>
+                </div>
+                <!--{:U('Index/volist',array('pid' =>$group_list[0]['id']))}-->
+                <ul class="right-list">
+                    
+                    <!--内容模块-->
+                        <div class='article_title'>{$article_detail['title']}</div>
+                        <div class="update_time">{$article_detail['update_time']|date="Y-m-d H:i:s",###}</div>
+                       
+                        <div class="art_content">{$article_detail['content']}</div>
+                </ul>
+
+            </td>
+        </tr>
+        
+    </table>
+    <div class="page">{$page}</div>
+</div>
+<div class="foot">
+    版权所有：{$copyright}
+</div>
+</body>
+</html>

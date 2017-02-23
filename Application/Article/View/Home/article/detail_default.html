@@ -1,0 +1,152 @@
+<include file="Application/Home/View/Public/head.html"/>
+<!--<link rel="shortcut icon" type="image/x-icon" href="__ROOT__/favicon.ico">-->
+<!--    <link rel="apple-touch-icon" type="image/x-icon" href="__ROOT__/favicon.ico">-->
+<!--    <link rel="stylesheet" type="text/css" href="__CUI__/css/cui.min.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/home.css?v={:C('STATIC_VERSION')}">-->
+<!--    <block name="style"></block>-->
+    <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- 如果配置里CDN静态资源列表则使用CDN否则使用静态资源 -->
+    <?php if(C('CDN_RESOURCE_LIST')): ?>
+        {:C('CDN_RESOURCE_LIST')}
+    <?php else: ?>
+        <script type="text/javascript" src="__PUBLIC__/libs/jquery/1.x/jquery.min.js"></script>
+    <?php endif; ?>
+<block name="style">
+    <style type="text/css">
+        .article-title {
+            margin-bottom: 15px;
+        }
+        .article-info {
+            padding: 10px 0px;
+            margin-bottom: 20px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        .article-info ul {
+            margin-bottom: 0px;
+        }
+        .article-body {
+            margin-bottom: 25px;
+        }
+		.article-body img{
+            max-width:100%;
+        }
+        .article-download .down-icon img {
+            width: 20px;
+        }
+        .article-download .down-name {
+            font-size: 16px;
+            vertical-align: middle;
+        }
+        .article-download .badge {
+            margin-top: 2px;
+        }
+        .article-download .list-group-item {
+            border-style: dashed;
+        }
+    </style>
+</block>
+
+<block name="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <!-- 文章内容 -->
+                <div class="panel">
+                	<span>
+                	当前位置:　<a href="{:U('Home/Index/index')}">首页</a>-><a href="{:U('index', array('cid' => $cid['id']))}">{$cid.title}</a>
+                	</span>
+                    <article class="article panel-body animated fadeInLeft">
+                        <!-- 文章标题 -->
+                        <div class="article-title">
+                            <h3 class="text-muted-5">{$info.main_field}</h3>
+                        </div>
+                        <!-- 文章信息 -->
+                        <div class="article-info text-muted">
+                            <ul class="list-unstyled list-inline">
+                                <li><i class="fa fa-calendar"></i> {$info.create_time|time_format}</li>
+                                <li><i class="fa fa-eye"></i> {$info.view} 浏览</li>
+<!--                                <li><i class="fa fa-comments"></i> {$info.comment} 评论</li>-->
+<!--                                <li><i class="fa fa-thumbs-o-up"></i> {$info.good} 赞</li>-->
+<!--                                <li class="hidden-xs pull-right">{:hook('BaiduShare')}</li>-->
+                            </ul>
+                        </div>
+                        <!-- 文章摘要 -->
+                        <notempty name="info.abstract">
+<!--                            <div class="article-abstract">-->
+<!--                                <blockquote class="abstract">-->
+<!--                                    <small>{$info.abstract}</small>-->
+<!--                                </blockquote>-->
+<!--                            </div>-->
+                        </notempty>
+                        <!-- 文章正文 -->
+                        <div class="article-body"> 
+<!--        |parse_content  自带一个懒加载                -->
+                            {$info.content}
+                        </div>
+                        <!-- 文件下载-->
+                        <notempty name="info.file_list">
+                            <div class="article-download">
+                                <ul class="list-group">
+                                    <volist name="info.file_list" id="file">
+                                    	<neq name="file.token" value="please login">
+                                        <a rel="noflow" class="list-group-item" href="{:U('Home/Upload/download', array('token' => $file['token']))}" title="点击下载">
+                                            <span class="badge">下载次数：{$file.download}</span>
+                                            <span class="down-icon">{$file.show}</span>
+                                            <span class="down-name text-muted">{$file.name}</span>
+                                        </a>
+                                        <else />
+                                         <a rel="noflow" class="list-group-item" title="登录后查看">
+                                            <span class="badge">下载次数：{$file.download}</span>
+                                            <span class="down-icon">{$file.show}</span>
+                                            <span class="down-name text-muted">登录后查看</span>
+                                        </a>
+                                        </neq>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </notempty>
+                        <!-- 文章导航 -->
+                        <div class="article-pager">
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li class="previous">上一篇：<a href="{$info.previous.href}">{$info.previous.title}</a></li>
+                                <li class="next">下一篇：<a href="{$info.next.href}">{$info.next.title}</a></li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 hidden-xs">
+                <!-- 侧边导航 -->
+                <div class="panel">
+                    <div class="panel-body">
+                        <!-- 搜索 -->
+                        <form role="search" action="{$_search_url}" method="post" id="article_form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="请输入文章标题" name="keywords" value="{$_REQUEST['keywords']}">
+                                    <a onclick="$('#article_form').submit();" type="submit" value="" class="input-group-addon"><i class='fa fa-search'></i></a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- 分类列表 -->
+                        <div class="list-group">
+                            <article:category_list name="vo" pid="$_current_category['id']">
+                                <a class="list-group-item <if condition="$cid['id'] eq $vo['id']">active</if>" href="{:U('index', array('cid' => $vo['id']))}">
+                                    {$vo.title}
+                                </a>
+                            </article:category_list>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<include file="Application/Home/View/Public/foot.html"/>

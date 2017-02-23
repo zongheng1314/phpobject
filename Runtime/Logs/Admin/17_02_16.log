@@ -1,0 +1,262 @@
+[ 2017-02-16T08:38:12+08:00 ] 127.0.0.1 /wangzhan/?s=/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0057s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0076s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.029690s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+SQL: SELECT `name`,`value`,`type` FROM `auc_admin_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: taglib D:\phpStudy\WWW\wangzhan\Application\Common\Behavior\InitConfigBehavior.class.php 第 56 行.
+NOTIC: [8] Undefined index: behavior D:\phpStudy\WWW\wangzhan\Application\Common\Behavior\InitConfigBehavior.class.php 第 63 行.
+NOTIC: [8] Undefined index: behavior D:\phpStudy\WWW\wangzhan\Application\Common\Behavior\InitConfigBehavior.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `auc_admin_theme` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `auc_admin_theme` WHERE `current` = 1 ORDER BY id asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_hook` [ RunTime:0.0039s ]
+SQL: SELECT `addons` FROM `auc_admin_hook` WHERE `name` = 'FormBuilderExtend' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `auc_admin_addon` [ RunTime:0.0038s ]
+SQL: SELECT `config` FROM `auc_admin_addon` WHERE `name` = '' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.025206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026620s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001315s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001389s ]
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0096s ]
+
+[ 2017-02-16T08:38:13+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/admin/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0040s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0051s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.021848s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004987s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000968s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\3c5566b2bfbf6ef00ac5366ba47246fe.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\3c5566b2bfbf6ef00ac5366ba47246fe.php 第 10 行.
+NOTIC: [2] Missing argument 2 for get_cover(), called in D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\3c5566b2bfbf6ef00ac5366ba47246fe.php on line 210 and defined D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 302 行.
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 189 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2017-02-16T08:38:13+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/admin/public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0062s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0058s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.026676s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.003482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005167s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001641s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001959s ]
+
+[ 2017-02-16T08:38:28+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/admin/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0055s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0046s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.024931s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.004205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005872s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001336s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001420s ]
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0076s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\UserModel::login(), called in D:\phpStudy\WWW\wangzhan\Application\Admin\Controller\PublicController.class.php on line 34 and defined D:\phpStudy\WWW\wangzhan\Application\Admin\Model\UserModel.class.php 第 102 行.
+SQL: SELECT * FROM `auc_admin_user` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for user_md5(), called in D:\phpStudy\WWW\wangzhan\Application\Admin\Model\UserModel.class.php on line 120 and defined D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 264 行.
+NOTIC: [8] Undefined variable: auth_key D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 265 行.
+SQL: SHOW COLUMNS FROM `auc_admin_access` [ RunTime:0.0094s ]
+SQL: SELECT `group` FROM `auc_admin_access` WHERE `uid` = 1  [ RunTime:0.0003s ]
+
+[ 2017-02-16T08:38:30+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0054s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0041s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.022574s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.002261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003377s ]
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000942s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `auc_admin_module` WHERE `status` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `auc_admin_access` [ RunTime:0.0046s ]
+SQL: SELECT `group` FROM `auc_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `auc_admin_group` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `auc_admin_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: top D:\phpStudy\WWW\wangzhan\Application\Admin\Controller\IndexController.class.php 第 62 行.
+NOTIC: [8] Undefined index: top D:\phpStudy\WWW\wangzhan\Application\Admin\Controller\IndexController.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `auc_admin_link` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `auc_admin_link` WHERE `status` = 1 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 10 行.
+NOTIC: [2] Missing argument 2 for get_cover(), called in D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php on line 48 and defined D:\phpStudy\WWW\wangzhan\Application\Common\Common\function.php 第 302 行.
+SQL: SHOW COLUMNS FROM `auc_admin_upload` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `auc_admin_upload` WHERE `id` = 189 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: _link_list D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 99 行.
+SQL: select version() as v; [ RunTime:0.0009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002148s ]
+
+[ 2017-02-16T08:38:45+08:00 ] 127.0.0.1 /wangzhan/index.php?s=/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_module` [ RunTime:0.0055s ]
+SQL: SELECT `name` FROM `auc_admin_module` WHERE `status` = 1  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+NOTIC: [8] Use of undefined constant NOW_TIME - assumed 'NOW_TIME' D:\phpStudy\WWW\wangzhan\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `auc_admin_config` [ RunTime:0.0046s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'URL_MODEL' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `value` FROM `auc_admin_config` WHERE `name` = 'APP_SUB_DOMAIN_DEPLOY' LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Common\Behavior\InitModuleBehavior [ RunTime:0.022836s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: Run Common\Behavior\InitConfigBehavior [ RunTime:0.002392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003087s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::setStatus() should be compatible with Admin\Controller\AdminController::setStatus($model = Admin\Controller\CONTROLLER_NAME, $script = false) D:\phpStudy\WWW\wangzhan\Application\Admin\Controller\UserController.class.php 第 16 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000967s ]
+INFO: [ action_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `auc_admin_group` [ RunTime:0.0043s ]
+SQL: SELECT `admin_menu` FROM `auc_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\wangzhan\Application\Admin\Model\ModuleModel.class.php 第 80 行.
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\wangzhan\Application\Admin\Model\ModuleModel.class.php 第 80 行.
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\wangzhan\Application\Admin\Model\ModuleModel.class.php 第 80 行.
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\wangzhan\Application\Admin\Model\ModuleModel.class.php 第 80 行.
+SQL: SHOW COLUMNS FROM `auc_admin_access` [ RunTime:0.0043s ]
+SQL: SELECT `group` FROM `auc_admin_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `auc_admin_log` [ RunTime:0.0087s ]
+SQL: SELECT `admin_menu` FROM `auc_admin_module` WHERE `name` = 'Admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\wangzhan\Application\Admin\Model\ModuleModel.class.php 第 80 行.
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\wangzhan\Application\Admin\Model\ModuleModel.class.php 第 80 行.
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\wangzhan\Application\Admin\Model\ModuleModel.class.php 第 80 行.
+NOTIC: [8] Undefined index: url D:\phpStudy\WWW\wangzhan\Application\Admin\Model\ModuleModel.class.php 第 80 行.
+SQL: INSERT INTO `auc_admin_log` (`menu_url`,`menu_name`,`uid`,`username`,`add_time`,`key`) VALUES ('Admin/User/index','后台用户管理','1','admin','1487205525','/wangzhan/index.php?s=/admin/user/index.html') [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `auc_admin_user` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `auc_admin_user` WHERE ( auc_admin_user.id LIKE '%%' OR auc_admin_user.username LIKE '%%' ) AND auc_admin_user.reg_type = 'admin' AND auc_admin_user.status >= '0' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `auc_admin_user` WHERE ( auc_admin_user.id LIKE '%%' OR auc_admin_user.username LIKE '%%' ) AND auc_admin_user.reg_type = 'admin' AND auc_admin_user.status >= '0' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2048] Declaration of Common\Builder\ListBuilder::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 636 行.
+INFO: [ action_begin ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001072s ]
+INFO: [ action_begin ] --END-- [ RunTime:-0.079981s ]
+NOTIC: [8] Undefined index: model D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 175 行.
+NOTIC: [8] Undefined index: model D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 416 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: right_button D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 525 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: right_button D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 525 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: right_button D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 525 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: right_button D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 525 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\wangzhan\Application\Common\Builder\ListBuilder.class.php 第 512 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: meta_keywords D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\d2db961455aa86f1865a8062c7758332.php 第 9 行.
+NOTIC: [8] Undefined variable: meta_description D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\d2db961455aa86f1865a8062c7758332.php 第 10 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\wangzhan\Runtime\Cache\Admin\d2db961455aa86f1865a8062c7758332.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+

@@ -1,0 +1,19 @@
+<div class="top-wrap">
+    <div class="top">
+        <div class="logo">
+            <a href="#"><img src="__IMG__/logo.png" width="720" border="0"></a>
+        </div>
+    </div>
+</div>
+<div class="nav-wrap">
+    <ul class="nav">
+        <li <if condition="$_GET['pid'] eq '' && $article_detail['category']['pid'] eq '' "> class="nav-on"</if>><a href="{:U('Index/index')}">首&nbsp;页</a></li>
+        <li <if condition="$_GET['pid'] eq 5 || $group_list[0]['id'] eq 5 || $article_detail['category']['pid'] eq 5 || $article_detail['category']['id'] eq 5"> class="nav-on"</if>><a href="{:U('Index/volist', array('pid' => 5))}">园区概览</a></li>
+        <li <if condition="$_GET['pid'] eq 1 || $article_detail['pid'] eq 1 || $article_detail['category']['pid'] eq 1 || $article_detail['category']['id'] eq 1"> class="nav-on"</if>><a href="{:U('Index/volist',array('pid' => 1))}">新闻中心</a></li>
+        <li <if condition="$_GET['pid'] eq 4 || $article_detail['pid'] eq 4 || $article_detail['category']['pid'] eq 4 || $article_detail['category']['id'] eq 4"> class="nav-on"</if>><a href="{:U('Index/volist',array('pid' => 4))}">招商引资</a></li>
+        <li <if condition="$_GET['pid'] eq 20 || $article_detail['pid'] eq 20 || $article_detail['category']['pid'] eq 20 || $article_detail['category']['id'] eq 20"> class="nav-on"</if>><a href="{:U('Index/volist',array('pid' => 20))}">创新资源</a></li>
+        <li <if condition="$_GET['pid'] eq 6 || $article_detail['pid'] eq 6 || $article_detail['category']['pid'] eq 6 || $article_detail['category']['id'] eq 6"> class="nav-on"</if>><a href="{:U('Index/volist',array('pid' => 6))}">园区服务</a></li>
+        <li <if condition="$_GET['pid'] eq 3 || $article_detail['pid'] eq 3 || $article_detail['category']['pid'] eq 3 || $article_detail['category']['id'] eq 3"> class="nav-on"</if>><a href="{:U('Index/volist',array('pid' => 3))}">机关党建</a></li>
+        <li <if condition="$_GET['pid'] eq 29 || $article_detail['pid'] eq 29 || $article_detail['category']['pid'] eq 29 || $article_detail['category']['id'] eq 29"> class="nav-on"</if>><a href="{:U('Index/volist',array('pid' => 29))}">联系我们</a></li>
+    </ul>
+</div>

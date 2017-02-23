@@ -1,0 +1,45 @@
+//配置完此项，就不用天天写/Home 了。 直接admin.php/Liogin/login就可以了
+ define('BIND_MODULE','Home'); 
+
+// 绑定访问Home模块
+define('BIND_MODULE','Home');
+
+'URL_ROUTER_ON'	=> true,
+
+
+//  路由器分级
+/*
+*   多级控制器是指控制器可以通过子目录把某个控制器层分组存放，首先需要设置控制器的分级层次，例如，我们设置2级目录的控制器层：
+
+    'CONTROLLER_LEVEL'      =>  2,
+
+控制器文件的位置放置如下：
+
+    ├─Controller 访问控制器
+    │  ├─User User分级（组）
+    │  │  ├─UserTypeController.class.php 
+    │  │  ├─UserAuthController.class.php 
+    │  ...
+    │  ├─Admin Admin分级（组）
+    │  │  ├─UserController.class.php 
+    │  │  ├─ConfigController.class.php 
+*/
+
+
+/**
+ * 格式化打印
+ */
+function p($array){
+    echo '<pre>';
+    print_r($array);
+    echo '</pre>';
+}
+
+  <!--Volist标签主要用于在模板中循环输出数据集或者多维数组。-->
+	<volist name="data" id="vo">
+          <if condition="$vo['apply_user_numbers'] lt $vo['user_numbers']">
+	  <option value="{$vo.id}">{$vo['start_time']|date="H:i",###}　　　剩{$vo['user_numbers']-$vo['apply_user_numbers']}张</option>
+	  <else />
+          <option  disabled="">{$vo['start_time']|date=" H:i",###}　　　已被抢光</option>
+	  </if>
+	</volist>
